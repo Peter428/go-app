@@ -10,30 +10,28 @@
 
 <body>
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="text-center">Silahkan Login</h1>
-                        <form action="/login" method="POST">
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" name="username" id="username" placeholder="Username" class="form-control" />
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" name="password" placeholder="password" id="password" class="form-control" />
-                            </div>
-                            <div class="form-group mt-3 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-primary w-50 mr-2">Login</button>
-                                <a href="/register" class="btn btn-outline-success w-50">Register</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+        <h1 class="text-center">Silahkan Login</h1>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username" class="form-control" />
             </div>
-        </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="password" id="password" class="form-control" />
+            </div>
+            <center class="mt-2">
+                <button type="submit" class="btn btn-outline-primary btn-toolbar">
+            Login
+          </button>
+            </center>
+            <hr />
+            <center>
+                <span>Belum punya account? <a href="/register">Register</a></span>
+            </center>
+        </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
